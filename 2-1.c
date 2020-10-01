@@ -1,4 +1,4 @@
-// A first program in C
+/* A first program in C */
 
 #include <stdio.h>
 
