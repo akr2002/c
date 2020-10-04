@@ -15,7 +15,7 @@ int main()
 	{
 		/* prompt user for input and obtain value from user */
 		printf("Enter result (1=pass,2=fail): ");
-		scaonf("%d", &result);
+		scanf("%d", &result);
 
 		/* if result 1, increment passes */
 		if (result == 1)
@@ -24,7 +24,22 @@ int main()
 		}
 		else	/* otherwise, increment failures */
 		{
-			failures = failures + 1;student = student + 1;
+			failures = failures + 1;
 		}
+
+		student = student + 1;	/* increment student counter */
 	}
+
+	/* termination phase; display number of passes and failures */
+	printf("Passed %d\n", passes);
+	printf("Failed %d\n", failures);
+
+	/* if more than eight students passed, print "raise tuition" */
+	if (passes > 8)
+	{
+		printf("Raise tuition\n");
+	}
+
+	return 0;
 }
+
