@@ -16,5 +16,43 @@
 
 int main()
 {
-	char 
+	char accNo[11];
+	float beginningBalance = 0.0;
+	float totalCharges = 0.0;
+	float totalCredits = 0.0;
+	float creditLimit = 0.0;
+
+	while (1)
+	{
+		/* Now we take input */
+		printf("Enter account number (-1 to end): ");
+		scanf("%s", &accNo);
+		if (accNo[0] == '-') break;
+
+		printf("Enter beginning balance: ");
+		scanf("%f", &beginningBalance);
+
+		printf("Enter total charges: ");
+		scanf("%f", &totalCharges);
+
+		printf("Enter total credits: ");
+		scanf("%f", &totalCredits);
+		
+		printf("Enter credit limit: ");
+		scanf("%f", &creditLimit);
+		printf("\n");
+
+		/* If beginningBalance + totalCredits is greater than creditLimit, we print the following */
+		beginningBalance += totalCredits;
+		if (beginningBalance > creditLimit)
+		{
+			printf("Account:\t%s\n", accNo);
+			printf("Credit limit:\t%f\n", creditLimit);
+			printf("Balance:\t%f\n", beginningBalance);
+			printf("Credit Limit Exceeded.\n\n");
+		}
+	}
+
+	return 0;
 }
+
