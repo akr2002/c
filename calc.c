@@ -5,10 +5,13 @@ int main()
 	int num1, num2;
 	char op;
 
-	printf("Enter operator: ");
+	/*printf("Enter operator: ");
 	scanf("%c", &op);
 	printf("Enter two numbers\n");
-	scanf("%d%d", &num1, &num2);
+	scanf("%d%d", &num1, &num2);*/
+
+	printf("Enter expression: ");
+	scanf("%d%c%d", &num1, &op, &num2);
 
 	switch(op)
 	{
