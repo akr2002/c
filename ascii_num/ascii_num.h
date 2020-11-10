@@ -1,6 +1,8 @@
 #ifndef ASCII_NUM
 #define ASCII_NUM
 
+#include <stdio.h>
+
 /* just function prototypes */
 
 void print_zero();
@@ -15,8 +17,6 @@ void print_eight();
 void print_nine();
 void print_horizontal();
 
-#include <stdio.h>
-//#include "ascii_num.h"
 
 /*
  * 	*****
