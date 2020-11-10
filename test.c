@@ -1,21 +1,15 @@
+
 #include <stdio.h>
+int main ()
 
-int main(
-{
-	int a, b, c, d;
-	printf("Enter the first value: ");
-	scanf("%d", &a);
+     {
 
-	printf("Enter the second value: ");
-	scanf("%d", &b)
+         int x = 2, y = 0;
 
-	printf("Enter the third value: ");
-	scanf("%d", &c);
+         int z = (y++) ? y == 1 && x : 0;
 
-	d = a + b + c;
+         printf ("%d\n", z);
 
-	printf("%d + %d + %d = %d\n", a, b, c, d);
+        return 0;  
 
-	return 0;
-
-
+}
