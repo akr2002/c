@@ -32,7 +32,7 @@ int main()
 	/* display results */
 	if (result != -1)
 	{
-		printf("\n%d not found in array element %d\n", key, result);
+		printf("\n%d found in array element %d\n", key, result);
 	}
 	else printf("\n%d not found\n", key);
 
