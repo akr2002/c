@@ -1,9 +1,23 @@
-#include <stdio.h>
+void m();
 
-int main()
-{
-	int a = 50;
-	float a = 50.0;
-	printf("%d",a);
-	return 0;
-}
+   void n()
+
+   {
+
+       m();
+
+   }
+
+   void main()
+
+   {
+
+       void m()
+
+       {
+
+           printf("hi");
+
+       }
+
+   }
